@@ -68,10 +68,17 @@ La aplicación está diseñada para desplegarse en un entorno Apache Tomcat. A c
 **Pruebas y Validación**
 
 Durante el desarrollo del proyecto, se realizaron pruebas en las siguientes áreas:
-•	Pruebas de integración: Las interacciones entre CrearUsuarioServlet, UsuarioDAO y Item se validaron para asegurar que los datos fluyen correctamente entre los distintos componentes.
+•	Pruebas de integración: Las interacciones entre CrearUsuarioServlet, UsuarioDAO y HosocopoDAO  se validaron para asegurar que los datos fluyen correctamente entre los distintos componentes.
 •	Pruebas funcionales: Se verificaron todos los flujos de la interfaz de usuario para asegurar que la consulta y el despliegue del horóscopo funcionaran de manera intuitiva y sin errores.
 
 
 **Conclusión**
 
 El Proyecto Horóscopo Chino es una aplicación web que permite a los usuarios obtener información detallada sobre su signo zodiacal chino mediante un sistema de consultas basado en Java y Jakarta Servlets. El desarrollo de la aplicación incluyó la implementación de una base de datos MySQL y su despliegue en Apache Tomcat, lo que asegura un rendimiento óptimo y la posibilidad de futuras ampliaciones. Este informe ha documentado la estructura de la aplicación, sus componentes principales, el flujo de datos y los detalles del despliegue, ofreciendo una guía completa de la implementación y operatividad del proyecto.
+
+PD: puede acceder directamente al git@github.com:elioduran60/ProyectoM5.git 
+
+Autores:
+Elianny Urdaneta
+Elio Duran
+
