@@ -11,6 +11,9 @@ import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 import modelo.Usuario;
 
+/*
+*Clase para manejar las solicitudes HTTP para Iniciar la Sesion de los Usuarios en respuesta a solicitudes HTTP.
+*/
 @WebServlet("/IniciarSesion")
 public class IniciarSesionServlet extends HttpServlet {
 

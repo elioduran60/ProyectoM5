@@ -4,7 +4,9 @@ import java.util.List;
 import java.util.Optional;
 
 import modelo.Usuario;
-
+/*
+ * Interface para la Clase Usuario.DAO
+ */
 public interface IUDAO<I> {
     List<I> mostrarUsuarios() throws ClassNotFoundException;
 

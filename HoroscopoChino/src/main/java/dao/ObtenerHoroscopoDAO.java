@@ -7,7 +7,9 @@ import java.sql.SQLException;
 
 import modelo.Horoscopo;
 import procesaconexion.ConexionBD;
-
+/*
+ * Clase de acceso y manejo de Datos desde la base de datos: "db_hoscopo" 
+ */
 public class ObtenerHoroscopoDAO implements IHDAO {
 
     // Establecer conexión a la base de datos: "db_horoscopo" a través de ConexionBD
@@ -15,11 +17,10 @@ public class ObtenerHoroscopoDAO implements IHDAO {
         return ConexionBD.getInstance();
     }
 
-    // Obtener el Horoscopo Chino por la fecha que el Usuario introduzca:
+    // Metódo para Obtener el Horoscopo Chino por la fecha que el Usuario introduzca:
     @Override
     public Horoscopo horoscopoPorFecha(Date fecha_nacimiento) {
         Horoscopo horoscopo = null;
-        //System.out.println(fecha_nacimiento);
         
         //Consulta para obtener el Horoscopo Chino por la fecha que el Usuario introduzca:
         String sql = "SELECT * FROM horoscopo WHERE fecha_fin >= '" + fecha_nacimiento + "' AND fecha_inicio <= '" + fecha_nacimiento + "';";

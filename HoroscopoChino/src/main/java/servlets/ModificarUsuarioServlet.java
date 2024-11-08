@@ -17,6 +17,9 @@ import jakarta.servlet.http.HttpServletResponse;
 import modelo.Horoscopo;
 import modelo.Usuario;
 
+/*
+*Clase para manejar las solicitudes HTTP para Modificar parametros de los Usuarios.
+*/
 @WebServlet("/ModificarUsuario")
 public class ModificarUsuarioServlet extends HttpServlet {
 

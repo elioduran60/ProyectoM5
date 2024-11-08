@@ -15,6 +15,9 @@ import jakarta.servlet.http.HttpServletResponse;
 import modelo.Horoscopo;
 import modelo.Usuario;
 
+/*
+*Clase para manejar las solicitudes HTTP para faciltar la creacion de Usuarios en respuesta a solicitudes HTTP.
+*/
 @WebServlet("/CreacionUsuario")  // La URL de registro de Usuario relacionada con la solicitud (jsp)
 public class CrearUsuarioServlet extends HttpServlet {
 

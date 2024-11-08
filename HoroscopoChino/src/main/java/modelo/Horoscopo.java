@@ -1,7 +1,9 @@
 package modelo;
-
 import java.sql.Date;
 
+/*
+*Clase del Modelo: "Horoscopo" con sus respectivos atributos y Métodos:
+*/
 public class Horoscopo {
     private Long id;
     private String animal;
@@ -40,6 +42,6 @@ public class Horoscopo {
         this.fecha_fin = fecha_fin;
     }
     public boolean isPresent() {
-       return true;
+        return true;
     }
 }

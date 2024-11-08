@@ -13,6 +13,9 @@ import java.util.Optional;
 import modelo.Usuario;
 import procesaconexion.ConexionBD;
 
+/*
+ * Clase de acceso y manejo de Datos desde la base de datos: "db_hoscopo" 
+ */
 @SuppressWarnings("rawtypes")
 public class UsuarioDAO implements IUDAO {
 

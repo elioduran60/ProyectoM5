@@ -12,6 +12,9 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import modelo.Usuario;
 
+/*
+*Clase para manejar las solicitudes HTTP para Eliminar los Usuarios existentes.
+*/
 @WebServlet("/EliminarUsuario")
 public class EliminarUsuarioServlet extends HttpServlet {
     @Override

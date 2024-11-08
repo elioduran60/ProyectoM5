@@ -13,6 +13,9 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import modelo.Usuario;
 
+/*
+*Clase para manejar las solicitudes HTTP para generar Lista de Usuarios.
+*/
 @WebServlet("/ListarUsuario")
 public class ListarUsuarioServlet extends HttpServlet {
 

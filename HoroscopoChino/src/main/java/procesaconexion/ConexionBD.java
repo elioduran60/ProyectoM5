@@ -4,8 +4,9 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-
-// Genera la conexion a la DB: "db_horostopo"
+/*
+*Clase para la conexion con la DB: "db_horostopo" con sus respectivos metodos:
+*/
 public class ConexionBD {
     private static Connection conn;
     @SuppressWarnings({"UseSpecificCatch", "CallToPrintStackTrace"})

@@ -1,8 +1,10 @@
 package modelo;
 
-//import java.sql.Date;
 import java.util.Date;
 
+/*
+*Clase del Modelo: "usuario" con sus respectivos atributos y Métodos:
+*/
 public class Usuario {
     private Long id;
     private String nombre;
