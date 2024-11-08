@@ -2,17 +2,15 @@
     File Templates. --%>
     <%@ page contentType="text/html;charset=UTF-8" language="java" %>
     <% String password = (String) request.getAttribute("password"); %>
-        <!DOCTYPE html>
-        <html lang="en">
-
-        <head>
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-                integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-                crossorigin="anonymous">
-            <title>Index</title>
-        </head>
-
-        <body>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous">
+        <title>Index</title>
+    </head>
+    <body>
             <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #17A2B8 !important;">
                 <div class="container-fluid">
                     <a class="navbar-brand text-dark fw-bold" href="/HoroscopoChino">Horóscopo Chino</a>
@@ -28,7 +26,6 @@
                     </div>
                 </div>
             </nav>
-
             <div class="container mt-5">
                 <h1>Inicia Sesión</h1>
                 <p>Es necesario que inicies sesión para revisar tu horóscopo chino. Si todavía no tienes cuenta, haz
@@ -48,24 +45,18 @@
                         <td><button type="submit" class="btn btn-info">Ingresar</button></td>
                     </tr>
             </div>
+            <script>
+                var password = "<%=password%>";
+                if (password === 'Contraseña incorrecta') {
+                    alert('Contraseña incorrecta');
+                }
 
-    <script>
-        var password = "<%=password%>";
-        if (password === 'Contraseña incorrecta') {
-            alert('Contraseña incorrecta');
-            //window.location.href = "/";
-        }
-
-        if (password === 'Usuario no existe, debe registrarse') {
-            alert('Usuario no existe, debe registrarse');
-            //window.location.href = "/";
-        }
-    </script>
-
-
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-                integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-                crossorigin="anonymous"></script>
+                if (password === 'Usuario no existe, debe registrarse') {
+                    alert('Usuario no existe, debe registrarse');
+                }
+            </script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+                    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+                    crossorigin="anonymous"></script>
         </body>
-
-        </html>
+    </html>

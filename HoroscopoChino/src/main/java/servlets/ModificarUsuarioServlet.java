@@ -16,7 +16,6 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import modelo.Horoscopo;
 import modelo.Usuario;
-
 /*
 *Clase para manejar las solicitudes HTTP para Modificar parametros de los Usuarios.
 */
@@ -53,7 +52,6 @@ public class ModificarUsuarioServlet extends HttpServlet {
             resp.sendRedirect(req.getContextPath() + "/Menu");
         }
     }
-
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {

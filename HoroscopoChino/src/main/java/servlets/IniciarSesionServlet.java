@@ -10,18 +10,15 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 import modelo.Usuario;
-
 /*
-*Clase para manejar las solicitudes HTTP para Iniciar la Sesion de los Usuarios en respuesta a solicitudes HTTP.
+*Clase para manejar las solicitudes HTTP para iniciar la Sesion de los Usuarios.
 */
 @WebServlet("/IniciarSesion")
 public class IniciarSesionServlet extends HttpServlet {
-
         @Override
         protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
                 req.getRequestDispatcher("/HoroscopoChino").forward(req, resp);
         }
-
         @Override
         protected void doPost(HttpServletRequest req, HttpServletResponse resp)
                         throws ServletException, IOException {

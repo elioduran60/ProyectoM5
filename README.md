@@ -79,6 +79,5 @@ El Proyecto Horóscopo Chino es una aplicación web que permite a los usuarios o
 PD: puede acceder directamente al git@github.com:elioduran60/ProyectoM5.git 
 
 Autores:
-Elianny Urdaneta
-Elio Duran
+Elianny Urdaneta y Elio Duran
 

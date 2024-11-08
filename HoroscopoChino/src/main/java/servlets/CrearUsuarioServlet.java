@@ -14,21 +14,18 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import modelo.Horoscopo;
 import modelo.Usuario;
-
 /*
-*Clase para manejar las solicitudes HTTP para faciltar la creacion de Usuarios en respuesta a solicitudes HTTP.
+*Clase para manejar las solicitudes HTTP para faciltar la creacion de Usuarios.
 */
 @WebServlet("/CreacionUsuario")  // La URL de registro de Usuario relacionada con la solicitud (jsp)
 public class CrearUsuarioServlet extends HttpServlet {
 
     private static final long serialVersionUID = 1L;
-
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         request.getRequestDispatcher("/creacion-usuario.jsp").forward(request, response);
     }
-
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String nombre = req.getParameter("nombre");
@@ -64,7 +61,6 @@ public class CrearUsuarioServlet extends HttpServlet {
             resp.sendError(HttpServletResponse.SC_NOT_FOUND, "No se pudo crear el usuario");
             return;
         }
-
         if (usuarioCreado) {
             req.setAttribute("usuario", "Usuario creado correctamente.!");
             req.getRequestDispatcher("creacion-usuario.jsp").forward(req, resp);

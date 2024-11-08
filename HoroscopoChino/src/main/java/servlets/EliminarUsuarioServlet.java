@@ -47,14 +47,12 @@ public class EliminarUsuarioServlet extends HttpServlet {
             resp.sendRedirect(req.getContextPath() + "/Menu");
         }
     }
-
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         UsuarioDAO usuarioDAO = new UsuarioDAO();
         Long id = Long.valueOf(req.getParameter("id"));
         System.out.println("id: " + id);
         List<Usuario> usuarios;
-
         try {
             Boolean eliminado = usuarioDAO.eliminarUsuario(id);
             usuarios = usuarioDAO.mostrarUsuarios();
